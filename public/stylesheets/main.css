@@ -1,50 +1,196 @@
 /*
  // Display grid templat //
 */
+
+:root {
+  --profil-image: url(/site-img/—Pngtree—corporate\ company\ promotion\ ppt\ background_1020963.jpg);
+  --max-center-slide: url(/site-img/—Pngtree—corporate\ company\ promotion\ ppt\ background_1020963.jpg);
+}
 .grid-temp-content {
-    grid-template-columns: minmax(0, 3fr) minmax(0, 8fr) minmax(207px, 3fr);
-    column-gap: var(--scaffold-layout-gutter);
-    display: grid;
-    grid-area: content;
-    grid-template-rows: auto;
-    row-gap: var(--scaffold-layout-gutter);
-    max-width: 1285px;
-    padding-right: var(--bs-gutter-x, .75rem) !important;
-    padding-left: var(--bs-gutter-x, .75rem) !important;
-    margin-right: auto !important;
-    margin-left: auto !important;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 9fr) minmax(207px, 3fr);
+  column-gap: var(--scaffold-layout-gutter);
+  display: grid;
+  grid-area: content;
+  grid-template-rows: auto;
+  row-gap: var(--scaffold-layout-gutter);
+  max-width: 1285px;
+  padding-right: var(--bs-gutter-x, 0.75rem) !important;
+  padding-left: var(--bs-gutter-x, 0.75rem) !important;
+  padding-top: 23px !important;
+  margin-right: auto !important;
+  margin-left: auto !important;
 }
 
 .main-container-content {
-    --scaffold-layout-gutter: 1.9rem;
+  --scaffold-layout-gutter: 1.9rem;
 }
 
 .room-grid-component {
-    max-width: unset;
-    padding-top: var(--bs-gutter-y, 4.7rem) !important;
+  max-width: unset;
+  padding-top: var(--bs-gutter-y, 4.5rem) !important;
 }
 
 /*****************************************************************/
 
 /*  Options height */
-.left-min-content{
-    height: 500px;
+.left-min-content {
+  height: 500px;
 }
 
-.top-slider{
-    height: 300px;
+.top-slider {
+  max-height: max-content;
+  margin-bottom: 13px !important;
 }
 
-.bottom-content{
-    height: 900px;
+.bottom-content {
+  height: 900px;
 }
 
-.right-min-content{
-    height: 600px;
+.right-min-content {
+  height: 600px;
 }
 
 /*****************************/
 
 .bac-color {
-    background: #e5e5e5;
+  background: #e5e5e5;
+  border: 1px solid #d7d6d6;
+  border-radius: 5px;
+  box-shadow: 0px 0px 0px 0.7px #f1f1f1;
+}
+
+.btn-none {
+  border: none;
+  background: none;
+  height: 100%;
+  max-width: max-content;
+  display: flex;
+  align-items: center;
+  padding-right: 7px !important;
+  transition: 0.3s !important;
+  padding: 0 11px 0 3px !important;
+}
+
+.btn-none:hover {
+  background: #ccc;
+  transition: 0.3s !important;
+}
+
+/*****************************/
+
+.left-profil-img {
+  height: 100px;
+  background-image: var(--profil-image);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slider-content-img {
+  width: 100%;
+  height: 303px;
+  background-image: var(--max-center-slide);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.link-page {
+  height: 45px;
+  margin-bottom: 13px !important;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+}
+
+.link-page button .link-context {
+  height: 100%;
+}
+.link-page button .link-icon {
+  height: 100%;
+  padding: 5px !important;
+}
+
+.link-page button .link-icon img {
+  height: 100%;
+}
+
+.link-context {
+  height: 100%;
+  max-width: max-content;
+}
+
+.learning-info .user-name {
+  height: 95px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.learning-info {
+  padding: 3px 3px !important;
+  border-bottom: 1px solid #ccc;
+}
+
+.learning-info .user-name a {
+  font-size: 17px;
+  color: #000;
+  font-weight: 600;
+}
+
+icon-site-png {
+  width: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.link-site icon-site-png img {
+  width: 100%;
+  height: 100%;
+}
+
+.link-site {
+  margin: 1px 2.3px !important;
+}
+
+.link-site a {
+  display: flex;
+  align-items: center;
+  padding: 3px 0 !important;
+}
+
+.span-scn {
+  margin-left: 9px !important;
+  color: #000 !important;
+}
+
+.my-learning a icon-site-png img {
+  width: 100%;
+  padding-top: 3px !important;
+}
+
+.my-learning {
+  margin: 3px 0 !important;
+  border-bottom: 1px solid #ccc;
+}
+
+.my-learning a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 9px !important;
+}
+
+.my-learning a:hover {
+  background: #ccc;
+}
+
+.my-learning a span {
+  margin-left: 9px !important;
+}
+
+.span-level {
+  line-height: 15px;
+  font-size: 13px;
+  letter-spacing: 0.7px;
+  padding: 9px !important;
 }

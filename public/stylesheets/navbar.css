@@ -23,16 +23,16 @@
 }
 
 .navbar-line-top {
-  background-color: #334554;
+  background-color: #363636;
   /* background-color: #003e70; */
   /* Ranglar navbar uchun */
   padding: 0;
-  border-bottom: 5px solid #0f71c1;
+  border-bottom: 3px solid #5e5e5e;
   position: relative;
 }
 
 .navbar-content {
-  height: 75px;
+  height: 67px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -44,8 +44,8 @@
 .cd-navbar-info {
   max-width: 1285px;
   margin: auto !important;
-  padding-right: var(--bs-gutter-x, .75rem) !important;
-  padding-left: var(--bs-gutter-x, .75rem) !important;
+  padding-right: var(--bs-gutter-x, 0.75rem) !important;
+  padding-left: var(--bs-gutter-x, 0.75rem) !important;
 }
 
 .cd-container-width {
@@ -112,13 +112,13 @@
   padding: 0 9px 0 0 !important;
   font-size: 31px;
   color: #dfecff;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .input-box-fk {
   display: flex;
   align-items: center;
-  height: 39px;
+  height: 35px;
   width: 100%;
   padding-right: 15px !important;
 }
@@ -128,22 +128,22 @@
 }
 
 .li-item-link span {
-  padding: 0 7.1px !important;
+  padding: 3px 7.1px 0 !important;
   font-size: 15px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   letter-spacing: 0.7px;
 }
 
 .inter-info li-icon {
   padding: 0 9px !important;
-  color: #47d125;
+  color: #ffffff;
   border-bottom: 1px solid;
   cursor: pointer;
 }
 
 .inter-info li-icon:hover {
   border-bottom: 1px solid #fff;
-  color: rgb(250, 250, 250);
+  color: rgb(143, 143, 143);
 }
 
 .profil-img img {
@@ -201,7 +201,7 @@
 .search-input input::placeholder {
   color: #2477bb;
   font-weight: 600;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .li-item-link a {
@@ -210,7 +210,7 @@
   flex-wrap: nowrap;
   color: #d9d9d9;
   height: 100%;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .profil-img img {
@@ -223,7 +223,7 @@
 }
 
 .profil-info:hover img {
-  filter: brightness(0.7);
+  filter: brightness(0.9);
 }
 
 .drop-from-top li-drop {
@@ -248,17 +248,17 @@
 
 .logo-title a span {
   color: #47d125;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .li-item-link .fa-home {
-  color: #56fd2d;
+  color: #ffffff;
 }
 
 .li-item-link .fa-wifi {
-  color: #56fd2d;
+  color: #ffffff;
 }
 
 .li-item-link .fa-analytics {
-  color: #56fd2d;
+  color: #ffffff;
 }
