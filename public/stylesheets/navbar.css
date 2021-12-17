@@ -1,0 +1,264 @@
+* {
+  text-decoration: none !important;
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.nav-link-jpg {
+  max-height: max-content;
+  height: 575px;
+  background-repeat: round;
+  position: absolute;
+  width: 100%;
+  z-index: -33;
+  top: 69px;
+  left: 12% !important;
+  right: 12% !important;
+}
+
+.content-line-fixed {
+  position: fixed !important;
+  width: 100%;
+}
+
+.navbar-line-top {
+  background-color: #334554;
+  /* background-color: #003e70; */
+  /* Ranglar navbar uchun */
+  padding: 0;
+  border-bottom: 5px solid #0f71c1;
+  position: relative;
+}
+
+.navbar-content {
+  height: 75px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  padding: 5px 0 5px 0 !important;
+}
+
+.cd-navbar-info {
+  max-width: 1285px;
+  margin: auto !important;
+  padding-right: var(--bs-gutter-x, .75rem) !important;
+  padding-left: var(--bs-gutter-x, .75rem) !important;
+}
+
+.cd-container-width {
+  max-width: 1285px;
+  margin: auto !important;
+  border-bottom-left-radius: 33px;
+  border-bottom-right-radius: 33px;
+}
+
+.inter-info {
+  height: 100%;
+  max-width: max-content;
+  display: flex;
+  align-items: center;
+}
+
+.droup-li-canvas {
+  max-width: max-content;
+  height: 100%;
+}
+
+.droup-title ul {
+  padding-left: 19px !important;
+  padding-right: 11px !important;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.droup-title {
+  height: 100%;
+  width: 100%;
+}
+
+.search-box {
+  width: 100%;
+  height: 100%;
+}
+
+.search-input {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.droup-title .li-item-link {
+  margin: 0 7px !important;
+  height: 100%;
+}
+
+.droup-title .li-item-link a:hover {
+  color: #fff !important;
+}
+
+.logo-title {
+  height: 100%;
+}
+
+.logo-title a {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0 9px 0 0 !important;
+  font-size: 31px;
+  color: #dfecff;
+  font-family: 'Roboto', sans-serif;
+}
+
+.input-box-fk {
+  display: flex;
+  align-items: center;
+  height: 39px;
+  width: 100%;
+  padding-right: 15px !important;
+}
+
+.input-box-fk input {
+  width: 100%;
+}
+
+.li-item-link span {
+  padding: 0 7.1px !important;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.7px;
+}
+
+.inter-info li-icon {
+  padding: 0 9px !important;
+  color: #47d125;
+  border-bottom: 1px solid;
+  cursor: pointer;
+}
+
+.inter-info li-icon:hover {
+  border-bottom: 1px solid #fff;
+  color: rgb(250, 250, 250);
+}
+
+.profil-img img {
+  border: none;
+  outline: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 9px !important;
+}
+
+.profil-img {
+  display: flex;
+  align-items: center;
+  margin-left: 15px !important;
+}
+
+.search-icon {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.search-input-button {
+  border: none;
+  background: none;
+  width: 37px;
+  background: #e0f1ff;
+  height: 100%;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.search-input-button .fa-search {
+  font-size: 19px;
+  color: #003c6c;
+}
+
+.search-input-button:hover .fa-search {
+  color: #00b51f;
+}
+
+.search-input input {
+  border: none;
+  height: 100%;
+  padding: 11px !important;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.search-input input:focus {
+  outline: none;
+}
+
+.search-input input::placeholder {
+  color: #2477bb;
+  font-weight: 600;
+  font-family: 'Roboto', sans-serif;
+}
+
+.li-item-link a {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  color: #d9d9d9;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.profil-img img {
+  padding: 3px !important;
+  background-color: #2477bb;
+}
+
+.profil-info {
+  cursor: pointer;
+}
+
+.profil-info:hover img {
+  filter: brightness(0.7);
+}
+
+.drop-from-top li-drop {
+  color: #56fd2d;
+  cursor: pointer;
+}
+
+.drop-from-top li-drop:hover {
+  color: rgb(249, 249, 249);
+}
+
+.drop-from-top {
+  margin-top: 7px !important;
+}
+
+.content-lg {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.logo-title a span {
+  color: #47d125;
+  font-family: 'Roboto', sans-serif;
+}
+
+.li-item-link .fa-home {
+  color: #56fd2d;
+}
+
+.li-item-link .fa-wifi {
+  color: #56fd2d;
+}
+
+.li-item-link .fa-analytics {
+  color: #56fd2d;
+}

@@ -1,0 +1,50 @@
+/*
+ // Display grid templat //
+*/
+.grid-temp-content {
+    grid-template-columns: minmax(0, 3fr) minmax(0, 8fr) minmax(207px, 3fr);
+    column-gap: var(--scaffold-layout-gutter);
+    display: grid;
+    grid-area: content;
+    grid-template-rows: auto;
+    row-gap: var(--scaffold-layout-gutter);
+    max-width: 1285px;
+    padding-right: var(--bs-gutter-x, .75rem) !important;
+    padding-left: var(--bs-gutter-x, .75rem) !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+.main-container-content {
+    --scaffold-layout-gutter: 1.9rem;
+}
+
+.room-grid-component {
+    max-width: unset;
+    padding-top: var(--bs-gutter-y, 4.7rem) !important;
+}
+
+/*****************************************************************/
+
+/*  Options height */
+.left-min-content{
+    height: 500px;
+}
+
+.top-slider{
+    height: 300px;
+}
+
+.bottom-content{
+    height: 900px;
+}
+
+.right-min-content{
+    height: 600px;
+}
+
+/*****************************/
+
+.bac-color {
+    background: #e5e5e5;
+}
