@@ -23,11 +23,11 @@
 }
 
 .navbar-line-top {
-  background-color: #363636;
+  background-color: #e9e9e9;
   /* background-color: #003e70; */
   /* Ranglar navbar uchun */
   padding: 0;
-  border-bottom: 3px solid #5e5e5e;
+  border-bottom: 2.3px solid #545454;
   position: relative;
 }
 
@@ -97,7 +97,7 @@
 }
 
 .droup-title .li-item-link a:hover {
-  color: #fff !important;
+  color: rgb(39, 39, 39) !important;
 }
 
 .logo-title {
@@ -111,7 +111,7 @@
   height: 100%;
   padding: 0 9px 0 0 !important;
   font-size: 31px;
-  color: #dfecff;
+  color: #5e5d5d;
   font-family: "Roboto", sans-serif;
 }
 
@@ -136,14 +136,14 @@
 
 .inter-info li-icon {
   padding: 0 9px !important;
-  color: #ffffff;
+  color: #303030;
   border-bottom: 1px solid;
   cursor: pointer;
 }
 
 .inter-info li-icon:hover {
-  border-bottom: 1px solid #fff;
-  color: rgb(143, 143, 143);
+  border-bottom: 1px solid rgb(111, 250, 111);
+  color: rgb(72, 72, 72);
 }
 
 .profil-img img {
@@ -171,7 +171,7 @@
   border: none;
   background: none;
   width: 37px;
-  background: #e0f1ff;
+  background: #505050;
   height: 100%;
   border-bottom-right-radius: 3px;
   border-top-right-radius: 3px;
@@ -179,11 +179,11 @@
 
 .search-input-button .fa-search {
   font-size: 19px;
-  color: #003c6c;
+  color: #ffffff;
 }
 
 .search-input-button:hover .fa-search {
-  color: #00b51f;
+  color: #72ff6d;
 }
 
 .search-input input {
@@ -192,6 +192,7 @@
   padding: 11px !important;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
+  background: #bfbfbf;
 }
 
 .search-input input:focus {
@@ -199,16 +200,16 @@
 }
 
 .search-input input::placeholder {
-  color: #2477bb;
-  font-weight: 600;
+  color: #3a3a3a;
   font-family: "Roboto", sans-serif;
+  letter-spacing: 0.7px;
 }
 
 .li-item-link a {
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
-  color: #d9d9d9;
+  color: #545454;
   height: 100%;
   font-family: "Roboto", sans-serif;
 }
@@ -227,12 +228,8 @@
 }
 
 .drop-from-top li-drop {
-  color: #56fd2d;
+  color: #373737;
   cursor: pointer;
-}
-
-.drop-from-top li-drop:hover {
-  color: rgb(249, 249, 249);
 }
 
 .drop-from-top {
@@ -252,13 +249,13 @@
 }
 
 .li-item-link .fa-home {
-  color: #ffffff;
+  color: #343434;
 }
 
 .li-item-link .fa-wifi {
-  color: #ffffff;
+  color: #343434;
 }
 
 .li-item-link .fa-analytics {
-  color: #ffffff;
+  color: #343434;
 }

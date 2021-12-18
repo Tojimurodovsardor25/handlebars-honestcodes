@@ -1,0 +1,147 @@
+/* 
+ Section content start 
+*/
+
+.content-info-name {
+    display: flex;
+    align-items: center;
+    padding: 9px 9px !important;
+    position: relative;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-info-name .ts-profil-img {
+    width: 33px;
+    height: 33px;
+    background: #005aff;
+}
+
+.content-info-name .ts-profil-img img {
+    width: 100%;
+}
+
+.st-content-info {
+    margin-left: 11px !important;
+}
+
+.st-content-options {
+    max-width: max-content;
+}
+
+.st-content-btn {
+    max-width: max-content;
+    background: none;
+    border: none;
+    padding: 1px 5px !important;
+    cursor: pointer;
+}
+
+.st-content-btn img {
+    width: 17px;
+}
+
+.st-content-options {
+    position: absolute;
+    right: 11px;
+    top: 11px;
+}
+
+.st-msx-container {
+    display: flex;
+    align-items: center;
+    margin: 5px 0 !important;
+}
+
+.st-msx-container .msx-img {
+    width: 61px;
+    height: 51px;
+    background: #9b9b9b;
+    margin: 0 9px !important;
+}
+
+.st-msx-container .msx-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.st-user-info {
+    width: 100%;
+}
+
+.m-profil-info .st-user-name-fol {
+    font-size: 15px;
+    margin-bottom: 4.1px !important;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 3px !important;
+}
+
+.wrok-info .from-in {
+    font-size: 11.7px;
+}
+
+.wrok-info .user-work-name {
+    font-size: 11px;
+}
+
+.content-title-info {
+    padding: 5px 0 !important;
+    border-bottom: 1px solid #ccc;
+}
+
+.m-profil-info {
+    line-height: 19px;
+}
+
+.wrok-info {
+    line-height: 15px;
+}
+
+.content-text-info icon-content {
+    display: flex;
+    width: 25px;
+    height: 25px;
+}
+
+.text-info-save {
+    background: none;
+    border: none;
+}
+
+.content-text-info {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+}
+
+.save-text-commit {
+    margin-right: 9px !important;
+}
+
+.msg-box {
+    line-height: 13px;
+}
+
+.text-msg {
+    font-size: 12.3px;
+}
+
+.msg-big-box {
+    background: #d3d3d3;
+    display: flex;
+    padding: 3px 5px 7px !important;
+    margin: 5px 0 !important;
+}
+
+.content-bigimg-info {
+    display: block;
+    max-height: max-content;
+    padding: 5px 5px !important;
+}
+
+.content-bigimg-info img {
+    max-height: max-content;
+    max-width: -webkit-fill-available;
+}
+
+.new-content-container-info{
+    border-bottom: 1px solid #ccc;
+}
