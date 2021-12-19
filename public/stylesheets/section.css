@@ -3,145 +3,369 @@
 */
 
 .content-info-name {
-    display: flex;
-    align-items: center;
-    padding: 9px 9px !important;
-    position: relative;
-    border-bottom: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  padding: 9px 9px !important;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+  z-index: 1;
+}
+
+.new-content-container {
+  margin-bottom: 19px !important;
 }
 
 .content-info-name .ts-profil-img {
-    width: 33px;
-    height: 33px;
-    background: #005aff;
+  width: 33px;
+  height: 33px;
+  background: #005aff;
 }
 
 .content-info-name .ts-profil-img img {
-    width: 100%;
+  width: 100%;
 }
 
 .st-content-info {
-    margin-left: 11px !important;
+  margin-left: 11px !important;
 }
 
 .st-content-options {
-    max-width: max-content;
+  max-width: max-content;
 }
 
 .st-content-btn {
-    max-width: max-content;
-    background: none;
-    border: none;
-    padding: 1px 5px !important;
-    cursor: pointer;
+  max-width: max-content;
+  background: none;
+  border: none;
+  padding: 1px 5px !important;
+  cursor: pointer;
 }
 
 .st-content-btn img {
-    width: 17px;
+  width: 17px;
 }
 
 .st-content-options {
-    position: absolute;
-    right: 11px;
-    top: 11px;
+  position: absolute;
+  right: 11px;
+  top: 11px;
 }
 
 .st-msx-container {
-    display: flex;
-    align-items: center;
-    margin: 5px 0 !important;
+  display: flex;
+  align-items: center;
+  margin: 5px 0 !important;
 }
 
 .st-msx-container .msx-img {
-    width: 61px;
-    height: 51px;
-    background: #9b9b9b;
-    margin: 0 9px !important;
+  width: 61px;
+  height: 51px;
+  background: #9b9b9b;
+  margin: 0 9px !important;
 }
 
 .st-msx-container .msx-img img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .st-user-info {
-    width: 100%;
+  width: 100%;
 }
 
 .m-profil-info .st-user-name-fol {
-    font-size: 15px;
-    margin-bottom: 4.1px !important;
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 3px !important;
+  font-size: 15px;
+  margin-bottom: 4.1px !important;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 3px !important;
 }
 
 .wrok-info .from-in {
-    font-size: 11.7px;
+  font-size: 11.7px;
 }
 
 .wrok-info .user-work-name {
-    font-size: 11px;
+  font-size: 11px;
 }
 
 .content-title-info {
-    padding: 5px 0 !important;
-    border-bottom: 1px solid #ccc;
+  padding: 5px 0 !important;
+  border-bottom: 1px solid #ccc;
 }
 
 .m-profil-info {
-    line-height: 19px;
+  line-height: 19px;
 }
 
 .wrok-info {
-    line-height: 15px;
+  line-height: 15px;
 }
 
 .content-text-info icon-content {
-    display: flex;
-    width: 25px;
-    height: 25px;
+  display: flex;
+  width: 25px;
+  height: 25px;
 }
 
 .text-info-save {
-    background: none;
-    border: none;
+  background: none;
+  border: none;
 }
 
 .content-text-info {
-    display: flex;
-    border-bottom: 1px solid #ccc;
+  display: flex;
+  border-bottom: 1px solid #ccc;
 }
 
 .save-text-commit {
-    margin-right: 9px !important;
+  margin-right: 9px !important;
 }
 
 .msg-box {
-    line-height: 13px;
+  line-height: 13px;
 }
 
 .text-msg {
-    font-size: 12.3px;
+  font-size: 12.3px;
 }
 
 .msg-big-box {
-    background: #d3d3d3;
-    display: flex;
-    padding: 3px 5px 7px !important;
-    margin: 5px 0 !important;
+  background: #d3d3d3;
+  display: flex;
+  padding: 3px 5px 7px !important;
+  margin: 5px 0 !important;
 }
 
 .content-bigimg-info {
-    display: block;
-    max-height: max-content;
-    padding: 5px 5px !important;
+  display: block;
+  max-height: max-content;
+  padding: 5px 5px !important;
 }
 
 .content-bigimg-info img {
-    max-height: max-content;
-    max-width: -webkit-fill-available;
+  max-height: max-content;
+  max-width: -webkit-fill-available;
 }
 
-.new-content-container-info{
-    border-bottom: 1px solid #ccc;
+.new-content-container-info {
+  border-bottom: 1px solid #ccc;
+}
+
+.liked-commit a {
+  display: flex;
+  align-items: center;
+}
+
+.liked-user-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 11px 5px !important;
+}
+
+.commit-users-i .users-commit {
+  color: rgb(0 90 151);
+  font-size: 12.3px;
+  font-weight: 600;
+}
+
+.users-commit-number {
+  color: #004c8f;
+}
+
+.users-commit .users-commit-number {
+  margin-right: 3px !important;
+}
+
+.like-numbers {
+  color: #005691;
+  font-weight: 700;
+  font-size: 12.1px;
+  letter-spacing: 0.3px;
+  padding-left: 1px !important;
+}
+.liked-numbers-info span svg {
+  width: 1.3rem;
+  height: 1.3rem;
+  padding-bottom: 2.3px !important;
+  fill: #004878;
+  display: block;
+}
+
+.fl-click {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fl-button {
+  border: none;
+  background: none;
+  padding: 5px 17px 5px 13px !important;
+  border-radius: 5px;
+  transition: ease-in 0.3s;
+}
+
+.fl-button:hover {
+  background: #c6daf7;
+  transition: ease-in 0.1s;
+}
+
+.fl-button fl-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1rem;
+  margin-right: 2.3px !important;
+}
+.like,
+.dislike,
+.commit,
+.share {
+  display: flex;
+  align-items: center;
+}
+
+.client-info .share-border {
+  border-bottom: 1px solid #ccc;
+}
+
+.client-info .share-border .share-box {
+  margin: 3px 5px !important;
+}
+
+.fl-click {
+  padding: 5px 5px !important;
+}
+
+.fl-button span {
+  padding-left: 3px !important;
+  color: #005a97;
+  font-weight: 500;
+}
+
+.dislike fl-icon {
+  padding-top: 5px !important;
+}
+
+.like fl-icon svg {
+  fill: #005a97;
+}
+
+.dislike svg {
+  transform: rotate(180deg);
+  fill: #005a97;
+}
+
+.commit svg path:nth-child(1) {
+  fill: #157ec5;
+}
+.commit svg path:nth-child(2) {
+  fill: #005a97;
+}
+
+.commit fl-icon {
+  width: 1.3rem;
+  padding-top: 1px !important;
+}
+
+.share fl-icon {
+  width: 1.07rem;
+  padding-top: 1px !important;
+}
+
+.share fl-icon path:nth-child(2) {
+  fill: #005d9d;
+}
+
+.commit-inp {
+  display: flex;
+  align-items: center;
+  padding: 11px 9px !important;
+  height: 61px;
+}
+
+.commit-inp .fl-inp {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.commit-inp .fl-inp input {
+  background: none;
+  border: none;
+  padding: 5.5px 9px !important;
+  height: 100%;
+  border-right: 1px solid #ccc;
+  width: 88.1%;
+}
+
+.commit-inp .fl-inp input:focus {
+  outline: none;
+}
+
+.commit-inp .fl-inp button {
+  border: none;
+  background: none;
+  height: 100%;
+}
+
+.commit-inp .fl-inp .ts-btn1 {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 5px !important;
+}
+.commit-inp .fl-inp .ts-btn2 {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 5px !important;
+}
+
+.commit-inp .fl-inp .ts-btn1 img {
+  width: 100%;
+  height: 100%;
+}
+
+.commit-inp .fl-inp .ts-btn1 svg {
+  padding: 0 5px 3px !important;
+}
+
+.ts-btn2 svg {
+  transform: rotate(-45deg);
+}
+
+.inp-flex-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 0 14.1px !important;
+}
+
+.send-commit,
+.send-btn {
+  height: 100%;
+}
+
+.send-commit {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.send-commit button {
+  border: none;
+  background: none;
+  padding: 0 11px !important;
+  background: #dfdfdf;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
 }

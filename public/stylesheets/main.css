@@ -1,10 +1,14 @@
 /*
- // Display grid templat //
+ // Display grid template //
 */
 
 :root {
   --profil-image: url(/site-img/—Pngtree—corporate\ company\ promotion\ ppt\ background_1020963.jpg);
   --max-center-slide: url(/site-img/—Pngtree—corporate\ company\ promotion\ ppt\ background_1020963.jpg);
+}
+
+body {
+  background: #fbf0ed;
 }
 
 .grid-temp-content {
@@ -31,11 +35,18 @@
   padding-top: var(--bs-gutter-y, 4.5rem) !important;
 }
 
+.left-min-profil {
+  border-top-left-radius: 23px !important;
+  border-top-right-radius: 23px !important;
+}
+
 /*****************************************************************/
 
 /*  Options height */
 .left-min-content {
   height: 500px;
+  border-top-left-radius: 23px !important;
+  border-top-right-radius: 23px !important;
 }
 
 .top-slider {
@@ -44,7 +55,16 @@
 }
 
 .bottom-content {
-  height: 900px;
+  height: 1111px;
+  overflow: hidden;
+  overflow-y: scroll;
+  border-top: 3px solid #5f8fb1;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 .right-min-content {
@@ -84,6 +104,8 @@
   background-image: var(--profil-image);
   background-repeat: no-repeat;
   background-size: cover;
+  border-top-left-radius: 23px !important;
+  border-top-right-radius: 23px !important;
 }
 
 .slider-content-img {
@@ -92,6 +114,9 @@
   background-image: var(--max-center-slide);
   background-repeat: no-repeat;
   background-size: cover;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom: 3px solid #5f8fb1;
 }
 
 .link-page {
@@ -130,7 +155,7 @@
   align-items: center;
   justify-content: center;
   border-bottom: 1px solid #ccc;
-  background: #e9e9e9;
+  background: #bfccd5;
 }
 
 .learning-info {
@@ -159,7 +184,7 @@ icon-site-png {
 .link-site {
   margin: 2.3px 0 !important;
   padding: 0 4.7px !important;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .link-site a {
@@ -195,7 +220,7 @@ icon-site-png {
 }
 
 .my-learning a:hover {
-  background-color: rgba(255, 255, 255, 0.755);
+  background: #c6daf7;
   transition: 0.3s;
 }
 
@@ -238,13 +263,13 @@ icon-site-png {
 }
 
 .span-level:hover {
-  background-color: rgba(255, 255, 255, 0.755);
+  background: #c6daf7;
   transition: 0.3s;
 }
 
 .link-site:hover {
-  background-color: rgba(255, 255, 255, 0.755);
-  transition: .3s;
+  background: #c6daf7;
+  transition: 0.3s;
 }
 
 .my-work a icon-site-png {
@@ -256,28 +281,28 @@ icon-site-png {
 }
 
 .my-work {
-  background: #66bb71;
+  background: #5f8fb1;
 }
 
 .my-work a .span-scn {
-  color: rgb(240 248 255) !important;
+  color: rgb(255 208 103) !important;
   text-decoration: underline !important;
 }
 
 .profil-img-user {
-  background: #66bb71;
+  background: #5f8fb1;
   display: flex;
   align-items: center;
   border-top-right-radius: 23px;
-  border-bottom-right-radius: 23px;
   border-top-left-radius: 23px;
   transition: 0.5s;
+  border-bottom: 3px solid #00538f;
 }
 
 .profil-img-user .img-one img {
   padding: 2.3px !important;
-  width: 51px;
-  height: 51px;
+  width: 59px;
+  height: 59px;
   border-top-right-radius: 23px;
   border-bottom-right-radius: 23px;
   border-top-left-radius: 23px;

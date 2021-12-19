@@ -20,10 +20,11 @@
 .content-line-fixed {
   position: fixed !important;
   width: 100%;
+  z-index: 3;
 }
 
 .navbar-line-top {
-  background-color: #e9e9e9;
+  background-color: #5f8fb1;
   /* background-color: #003e70; */
   /* Ranglar navbar uchun */
   padding: 0;
@@ -97,7 +98,7 @@
 }
 
 .droup-title .li-item-link a:hover {
-  color: rgb(39, 39, 39) !important;
+  color: rgb(43, 43, 43) !important;
 }
 
 .logo-title {
@@ -111,7 +112,7 @@
   height: 100%;
   padding: 0 9px 0 0 !important;
   font-size: 31px;
-  color: #5e5d5d;
+  color: #2c2c2c;
   font-family: "Roboto", sans-serif;
 }
 
@@ -183,7 +184,7 @@
 }
 
 .search-input-button:hover .fa-search {
-  color: #72ff6d;
+  color: #2277f7;
 }
 
 .search-input input {
@@ -192,7 +193,7 @@
   padding: 11px !important;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
-  background: #bfbfbf;
+  background: #ffffff;
 }
 
 .search-input input:focus {
@@ -209,7 +210,7 @@
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
-  color: #545454;
+  color: #ffffff;
   height: 100%;
   font-family: "Roboto", sans-serif;
 }
@@ -244,7 +245,7 @@
 }
 
 .logo-title a span {
-  color: #47d125;
+  color: #dfdfdf;
   font-family: "Roboto", sans-serif;
 }
 
