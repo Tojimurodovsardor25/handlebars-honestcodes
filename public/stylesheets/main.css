@@ -63,8 +63,21 @@ body {
   border-top-right-radius: 9px;
 }
 
-::-webkit-scrollbar {
+.bottom-content::-webkit-scrollbar {
   display: none;
+}
+
+::-webkit-scrollbar-button{
+  background-color: rgb(138, 138, 138);
+}
+
+::-webkit-scrollbar {
+  background-color: #2a2a2a;
+  width: 11px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #dddddd;
 }
 
 .right-min-content {
@@ -88,13 +101,13 @@ body {
   display: flex;
   align-items: center;
   padding-right: 7px !important;
-  transition: 0.3s !important;
+  transition: ease-in 0.3s !important;
   padding: 0 11px 0 3px !important;
 }
 
 .btn-none:hover {
-  background-color: rgba(255, 255, 255, 0.755);
-  transition: 0.3s !important;
+  background: #70a3c5;
+  transition: ease-out 0.3s !important;
 }
 
 /*****************************/
@@ -184,7 +197,7 @@ icon-site-png {
 .link-site {
   margin: 2.3px 0 !important;
   padding: 0 4.7px !important;
-  transition: 0.3s;
+  transition: ease-in 0.3s;
 }
 
 .link-site a {
@@ -220,8 +233,12 @@ icon-site-png {
 }
 
 .my-learning a:hover {
-  background: #c6daf7;
+  background: #5f8fb1;
   transition: 0.3s;
+}
+
+.my-learning a:hover .span-scn {
+  color: #fff !important;
 }
 
 .my-learning a span {
@@ -268,8 +285,12 @@ icon-site-png {
 }
 
 .link-site:hover {
-  background: #c6daf7;
-  transition: 0.3s;
+  background: #6eb3e5;
+  transition: ease-out 0.3s;
+}
+
+.link-site:hover .span-scn {
+  color: #ffffff !important;
 }
 
 .my-work a icon-site-png {

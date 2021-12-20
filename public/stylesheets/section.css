@@ -184,6 +184,7 @@
   letter-spacing: 0.3px;
   padding-left: 1px !important;
 }
+
 .liked-numbers-info span svg {
   width: 1.3rem;
   height: 1.3rem;
@@ -218,6 +219,7 @@
   width: 1rem;
   margin-right: 2.3px !important;
 }
+
 .like,
 .dislike,
 .commit,
@@ -260,6 +262,7 @@
 .commit svg path:nth-child(1) {
   fill: #157ec5;
 }
+
 .commit svg path:nth-child(2) {
   fill: #005a97;
 }
@@ -321,6 +324,7 @@
   height: 1.5rem;
   margin-left: 5px !important;
 }
+
 .commit-inp .fl-inp .ts-btn2 {
   width: 1.5rem;
   height: 1.5rem;
