@@ -67,7 +67,7 @@ body {
   display: none;
 }
 
-::-webkit-scrollbar-button{
+::-webkit-scrollbar-button {
   background-color: rgb(138, 138, 138);
 }
 

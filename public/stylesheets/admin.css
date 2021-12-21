@@ -1,0 +1,93 @@
+/* 
+
+*/
+
+.post-new-content .container {
+    max-width: 1285px;
+    padding-right: var(--bs-gutter-x, 0.75rem) !important;
+    padding-left: var(--bs-gutter-x, 0.75rem) !important;
+    padding-top: 65px !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+.inp-container {
+    grid-template-columns: minmax(0, 3fr) minmax(207px, 3fr);
+    column-gap: var(--scaffold-layout-gutter);
+    display: grid;
+    grid-area: content;
+    grid-template-rows: auto;
+    row-gap: var(--scaffold-layout-gutter);
+    max-width: 888px;
+    margin: auto !important;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 13px 0 !important;
+}
+
+.content-name h3 {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    margin: 9px 0 !important;
+    font-weight: 400;
+}
+
+.send-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.flex-container {
+    padding: 23px 19px !important;
+    margin: 11px 0 11px !important;
+}
+
+.npm-flex-box {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 9px 5.5px !important;
+}
+
+.npm-flex-box input {
+    width: 100%;
+    border: none;
+    background: none;
+    border: 1px solid #ccc;
+    padding: 5px 9.1px !important;
+}
+
+.npm-flex-box label {
+    margin: 6.7px 0 !important;
+    font-family: "Roboto", sans-serif;
+}
+
+.npm-flex-box input:focus {
+    outline: none;
+    border: 1px solid rgba(69, 171, 211, 0.8);
+}
+
+.left-min-box {
+    border-right: 1px solid #ccc;
+}
+
+.send-container button {
+    background: none;
+    border: none;
+    border: 1px solid #ccc;
+    padding: 4.9px 6.9px !important;
+    margin: 0px 5.5px !important;
+    background: rgb(230, 230, 230);
+    transition: ease-in 0.2s;
+    font-family: "Roboto", sans-serif;
+}
+
+.send-container button:hover {
+    background: rgb(253, 253, 253);
+    transition: ease-out 0.2s;
+}
+
+.send-container button:focus {
+    background: rgb(253, 253, 253);
+}
