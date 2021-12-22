@@ -5,6 +5,7 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const app = express();
+const session = require('express-session')
 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
@@ -25,6 +26,9 @@ app.engine('hbs', engine({
     allowProtoMethodsByDefault: true
   }
 }))
+
+
+require('./helper/db')()
 
 app.use(logger('dev'));
 app.use(express.json());
