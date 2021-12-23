@@ -1,38 +1,40 @@
 <div class="post-new-content">
     <div class="container">
         <div class="flex-container">
-            <div class="content-name">
-                <h3>Maqola qo'shish bo'limi <strong>(M.Q.B)</strong></h3>
-            </div>
-            <div class="inp-container">
-                <div class="left-min-box border-container">
-                    <div class="npm-flex-box">
-                        <label class="label-text-info" for="key-1">Maqola nomi -<strong>(M.N)</strong></label>
-                        <input type="text" placeholder="Maqola nomi - misol:(Github nima)">
+            <form action="/admin/content/add" method="POST">
+                <div class="content-name">
+                    <h3>Maqola qo'shish bo'limi <strong>(M.Q.B)</strong></h3>
+                </div>
+                <div class="inp-container">
+                    <div class="left-min-box border-container">
+                        <div class="npm-flex-box">
+                            <label class="label-text-info" for="key-1">Maqola nomi -<strong>(M.N)</strong></label>
+                            <input name="contentName" type="text" placeholder="Maqola nomi - misol:(Github nima)">
+                        </div>
+                        <div class="npm-flex-box">
+                            <label class="label-text-info" for="key-2">Maqola rasmi yoki video tasviri
+                                -<strong>(M.R.V)</strong></label>
+                            <input name="img" type="text" placeholder="Maqola rasmi,video">
+                        </div>
                     </div>
-                    <div class="npm-flex-box">
-                        <label class="label-text-info" for="key-2">Maqola rasmi yoki video tasviri
-                            -<strong>(M.R.V)</strong></label>
-                        <input type="text" placeholder="Maqola rasmi,video">
+                    <div class="right-min-box border-container">
+                        <div class="npm-flex-box">
+                            <label class="label-text-info" for="key-3">Maqola haqida qisqacha malumot
+                                -<strong>(M.H.Q.M)</strong></label>
+                            <input name="contentContext" type="text" placeholder="Maqola haqida qisqacha malumot">
+                        </div>
+                        <div class="npm-flex-box">
+                            <label class="label-text-info" for="key-4">Maqola haqida batafsil malumot
+                                -<strong>(M.H.B.M)</strong></label>
+                            <input type="text" placeholder="Maqola haqida batasil">
+                        </div>
+                        <div class="send-container">
+                            <button class="send-btn-1" type="submit"><a href="/">Bekor</a></button>
+                            <button class="send-btn-2" type="submit">Qo'shish</button>
+                        </div>
                     </div>
                 </div>
-                <div class="right-min-box border-container">
-                    <div class="npm-flex-box">
-                        <label class="label-text-info" for="key-3">Maqola haqida qisqacha malumot
-                            -<strong>(M.H.Q.M)</strong></label>
-                        <input type="text" placeholder="Maqola haqida qisqacha">
-                    </div>
-                    <div class="npm-flex-box">
-                        <label class="label-text-info" for="key-4">Maqola haqida batafsil malumot
-                            -<strong>(M.H.B.M)</strong></label>
-                        <input type="text" placeholder="Maqola haqida batasil">
-                    </div>
-                    <div class="send-container">
-                        <button class="send-btn-1" type="submit">Bekor</button>
-                        <button class="send-btn-2" type="submit">Qo'shish</button>
-                    </div>
-                </div>
-            </div>
+            </form>
         </div>
     </div>
 </div>
