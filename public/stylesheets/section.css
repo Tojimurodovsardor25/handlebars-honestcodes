@@ -295,9 +295,9 @@
   align-items: center;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
-  border-top: 1px solid #ccc;
-  border-left: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #366c93;
+  border-left: 1px solid #366c93;
+  border-bottom: 1px solid #366c93;
 }
 
 .commit-inp .fl-inp input {
@@ -305,7 +305,7 @@
   border: none;
   padding: 5.5px 9px !important;
   height: 100%;
-  border-right: 1px solid #ccc;
+  border-right: 1px solid #366c93;
   width: 88.1%;
 }
 
@@ -358,18 +358,20 @@
 }
 
 .send-commit {
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
-  border-right: 1px solid #ccc;
+  border-top: 1px solid #366c93;
+  border-bottom: 1px solid #366c93;
+  border-left: 1px solid #366c93;
+  border-right: 1px solid #366c93;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
+  background: #5f8fb1;
 }
 
 .send-commit button {
   border: none;
   background: none;
   padding: 0 11px !important;
-  background: #dfdfdf;
+  color: #fff;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
 }

@@ -172,7 +172,7 @@
   border: none;
   background: none;
   width: 37px;
-  background: #505050;
+  background: #193b53;
   height: 100%;
   border-bottom-right-radius: 3px;
   border-top-right-radius: 3px;
@@ -181,10 +181,6 @@
 .search-input-button .fa-search {
   font-size: 19px;
   color: #ffffff;
-}
-
-.search-input-button:hover .fa-search {
-  color: #2277f7;
 }
 
 .search-input input {
@@ -259,4 +255,45 @@
 
 .li-item-link .fa-analytics {
   color: #343434;
+}
+
+.btn-sign-in {
+  width: 63px;
+  height: 31px;
+  background: #046908;
+  color: #fff;
+  border: 1px solid #274e6b;
+  border-radius: 3px;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 9px !important;
+  transition: ease-in 0.3s;
+}
+
+.btn-sign-up {
+  width: 63px;
+  height: 31px;
+  background: #193b53;
+  border: 1px solid #274e6b;
+  color: #fff;
+  border-radius: 3px;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: ease-in 0.3s;
+}
+
+.btn-sign-in:hover {
+  background: #48708d;
+  color: #fff;
+  transition: ease-out 0.2s;
+}
+
+.btn-sign-up:hover {
+  background: #48708d;
+  color: #fff;
+  transition: ease-out 0.2s;
 }
