@@ -9,9 +9,10 @@ const MongoStore = require('connect-mongodb-session')(session)
 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
-const contentRouter = require('./routes/content')
+const adminRouter = require('./routes/admin')
+const authRouter = require('./routes/auth');
 
-// const variables = require('./')
+const virables = require('./middleware/virables');
 
 const app = express();
 
@@ -32,7 +33,7 @@ app.engine('hbs', engine({
 }))
 
 const store = new MongoStore({
-  uri: 'mongodb+srv://mirzaabdullayev:GyeI0l6BlW34k7aR@adminpanel.3hbpu.mongodb.net/adminPanel',
+  uri: 'mongodb+srv://tojimuradov:aHUfjDfe7UQGaKLn@hbsmongodbmongoose.7vugm.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
   collection: 'session'
 })
 
@@ -40,7 +41,7 @@ require('./helper/db')()
 
 app.use(logger('dev'));
 app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -51,11 +52,15 @@ app.use(session({
   store
 }))
 
-// app.use
+app.use('/admin', express.static(path.join(__dirname, 'public')))
+app.use('/admin:any', express.static(path.join(__dirname, 'public')))
+
+app.use(virables)
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
-app.use('/admin/content', contentRouter)
+app.use('/users', usersRouter)
+app.use('/admin', adminRouter)
+app.use('/auth', authRouter)
 
 // catch 404 and forward to error handler
 // app.use(function (req, res, next) {

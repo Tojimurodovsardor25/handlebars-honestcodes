@@ -11,8 +11,13 @@ body {
   background: #fbf0ed;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 .grid-temp-content {
-  grid-template-columns: minmax(0, 3fr) minmax(0, 7fr) minmax(207px, 3fr);
+  grid-template-columns: minmax(0, 2.5fr) minmax(0, 5fr) minmax(207px, 3fr);
   column-gap: var(--scaffold-layout-gutter);
   display: grid;
   grid-area: content;

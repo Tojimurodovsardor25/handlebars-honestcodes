@@ -1,0 +1,21 @@
+<div class="container-signin">
+    <div class="sign-box">
+        <span class="title-site">Sign in to Honest</span>
+        <form action="/auth/signin" method="POST">
+            <label for="">Nickname</label>
+            <input type="text" name="nickname" required>
+            <label for="">User password</label>
+            <input type="password" name="password">
+            <div class="create-signup">
+                <a class="forgot-title" href="#!">Forgot password?</a>
+                <span>Are you not registered?</span>
+                <a href="/auth/signup">Create an account</a>
+            </div>
+            <div class="btn-box">
+
+                <button> <a href="/">Go back</a></button>
+                <button type="submit">Sign in</button>
+            </div>
+        </form>
+    </div>
+</div>
