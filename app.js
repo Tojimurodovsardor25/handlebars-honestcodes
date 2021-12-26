@@ -12,7 +12,9 @@ const usersRouter = require('./routes/users');
 const adminRouter = require('./routes/admin')
 const authRouter = require('./routes/auth');
 
+
 const virables = require('./middleware/virables');
+const { fn } = require('moment');
 
 const app = express();
 
@@ -31,6 +33,8 @@ app.engine('hbs', engine({
     allowProtoMethodsByDefault: true
   }
 }))
+
+
 
 const store = new MongoStore({
   uri: 'mongodb+srv://tojimuradov:aHUfjDfe7UQGaKLn@hbsmongodbmongoose.7vugm.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',

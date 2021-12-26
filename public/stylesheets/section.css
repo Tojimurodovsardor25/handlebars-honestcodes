@@ -1,12 +1,12 @@
 /* 
- Section content start 
+ Bo'lim mazmuni uchun uslub boshlanishi!
 */
 
 .content-info-name {
   display: flex;
   align-items: center;
   padding: 9px 9px !important;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #5d5d5d;
   position: relative;
   z-index: 1;
 }
@@ -59,9 +59,13 @@
 
 .st-msx-container .msx-img {
   width: 61px;
-  height: 51px;
+  height: 54px;
   background: #9b9b9b;
   margin: 0 9px !important;
+}
+
+.from-ng-info {
+  padding: 0 3px !important;
 }
 
 .st-msx-container .msx-img img {
@@ -78,10 +82,13 @@
   margin-bottom: 4.1px !important;
   border-bottom: 1px solid #ccc;
   padding-bottom: 3px !important;
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 0.7px;
 }
 
 .wrok-info .from-in {
-  font-size: 11.7px;
+  font-size: 13.7px;
 }
 
 .wrok-info .user-work-name {
@@ -98,7 +105,11 @@
 }
 
 .wrok-info {
-  line-height: 15px;
+  line-height: 15.9px;
+  background: #d3d3d3;
+  margin-right: 7px !important;
+  font-weight: 500;
+  color: #1a1a1a;
 }
 
 .content-text-info icon-content {
@@ -118,15 +129,19 @@
 }
 
 .save-text-commit {
-  margin-right: 9px !important;
+  margin-right: 5px !important;
 }
 
 .msg-box {
   line-height: 13px;
+  BORDER-LEFT: 4px solid #6f6f6f;
+  padding-left: 5px !important;
 }
 
 .text-msg {
   font-size: 12.3px;
+  color: #242424;
+  font-weight: 500;
 }
 
 .msg-big-box {
@@ -148,7 +163,7 @@
 }
 
 .new-content-container-info {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #5d5d5d;
 }
 
 .liked-commit a {
@@ -178,11 +193,15 @@
 }
 
 .like-numbers {
-  color: #005691;
+  color: #a9a9a9;
   font-weight: 700;
   font-size: 12.1px;
   letter-spacing: 0.3px;
   padding-left: 1px !important;
+}
+
+.users-commit span:nth-child(2) {
+  color: #a9a9a9;
 }
 
 .liked-numbers-info span svg {
@@ -208,7 +227,7 @@
 }
 
 .fl-button:hover {
-  background: #c6daf7;
+  background: #2e2e2e;
   transition: ease-in 0.1s;
 }
 
@@ -229,7 +248,7 @@
 }
 
 .client-info .share-border {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #5d5d5d;
 }
 
 .client-info .share-border .share-box {
@@ -242,7 +261,7 @@
 
 .fl-button span {
   padding-left: 3px !important;
-  color: #005a97;
+  color: #a9a9a9;
   font-weight: 500;
 }
 
@@ -303,10 +322,11 @@
 .commit-inp .fl-inp input {
   background: none;
   border: none;
-  padding: 5.5px 9px !important;
+  padding: 5px 9px 7.5px 9px !important;
   height: 100%;
   border-right: 1px solid #366c93;
   width: 88.1%;
+  color: rgb(121, 121, 121);
 }
 
 .commit-inp .fl-inp input:focus {
@@ -364,7 +384,7 @@
   border-right: 1px solid #366c93;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background: #5f8fb1;
+  background: #04284b;
 }
 
 .send-commit button {
@@ -375,3 +395,5 @@
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
 }
+
+/* Ja'mi uslublar soni 1558 tani tashkil qilmoqda */

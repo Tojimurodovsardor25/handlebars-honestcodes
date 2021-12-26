@@ -1,3 +1,7 @@
+/* 
+ Navbar bo'limi uslub berish boshlandi!
+*/
+
 * {
   text-decoration: none !important;
   list-style: none !important;
@@ -24,7 +28,7 @@
 }
 
 .navbar-line-top {
-  background-color: #5f8fb1;
+  background-color: #121720;
   /* background-color: #003e70; */
   /* Ranglar navbar uchun */
   padding: 0;
