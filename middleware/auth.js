@@ -1,6 +1,7 @@
 module.exports = (req, res, next) => {
     if (!req.session.isAuth) {
-        res.redirect('/auth/signIn')
+        console.log('qayta jo`natish');
+        res.redirect('/auth/signin')
     }
 
     next()

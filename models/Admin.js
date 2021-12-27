@@ -13,9 +13,9 @@ const adminSchema = new Schema({
         type: String,
         required: true
     },
-    // avatar: {
-    //     type: String
-    // }
+    avatar: {
+        type: String
+    }
 })
 
 module.exports = model('admin', adminSchema)

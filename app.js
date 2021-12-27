@@ -13,8 +13,7 @@ const adminRouter = require('./routes/admin')
 const authRouter = require('./routes/auth');
 
 
-const virables = require('./middleware/virables');
-const { fn } = require('moment');
+const variables = require('./middleware/virables');
 
 const app = express();
 
@@ -59,7 +58,7 @@ app.use(session({
 app.use('/admin', express.static(path.join(__dirname, 'public')))
 app.use('/admin:any', express.static(path.join(__dirname, 'public')))
 
-app.use(virables)
+app.use(variables)
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter)
@@ -67,9 +66,9 @@ app.use('/admin', adminRouter)
 app.use('/auth', authRouter)
 
 // catch 404 and forward to error handler
-// app.use(function (req, res, next) {
-//   next(createError(404));
-// });
+app.use(function (req, res, next) {
+  next(createError(404));
+});
 
 // error handler
 app.use(function (err, req, res, next) {

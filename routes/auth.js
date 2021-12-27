@@ -1,17 +1,16 @@
 const { Router } = require("express");
 const Admin = require("../models/Admin");
 const router = Router();
+const fileUpload = require("../middleware/fileUpload.js");
+const bcrypt = require('bcryptjs')
 
-// const fileUpload = require("../middleware/fileUpload.js");
-const bcrypt = require("bcryptjs");
-
-router.get("/signin", (req, res, next) => {
+router.get("/signin", (req, res) => {
     res.render("auth/signin", {
         title: "SignIn",
     });
 });
 
-router.get("/logout", (req, res, next) => {
+router.get("/logout", (req, res) => {
     // req.session.isAuth = false
     req.session.destroy(() => {
         // tozalavorish
@@ -54,10 +53,10 @@ router.get("/signup", (req, res, next) => {
 
 
 
-router.post("/signup", /* fileUpload.single("avatar"), */ async (req, res) => {
-    const { nickname, name, password } = req.body;
+router.post("/signup", fileUpload.single("avatar"), async (req, res) => {
     console.log(req.body, 'Ma`lumotlar shu yerda ');
-    // req.file ? (avatar = req.file.filename) : (avatar = "");
+    const { nickname, name, password } = req.body;
+    req.file ? (avatar = req.file.filename) : (avatar = "");
 
     const hasPassword = await bcrypt.hash(password, 10);
 
@@ -65,6 +64,7 @@ router.post("/signup", /* fileUpload.single("avatar"), */ async (req, res) => {
         nickname,
         name,
         password: hasPassword,
+        avatar
     });
 
     await admin.save();
