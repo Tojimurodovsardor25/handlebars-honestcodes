@@ -6,7 +6,7 @@
   display: flex;
   align-items: center;
   padding: 9px 9px !important;
-  border-bottom: 1px solid #5d5d5d;
+  border-bottom: 1px solid #b3b3b3;
   position: relative;
   z-index: 1;
 }
@@ -106,10 +106,10 @@
 
 .wrok-info {
   line-height: 15.9px;
-  background: #303030;
+  background: #f1f1f1;
   margin-right: 7px !important;
   font-weight: 500;
-  color: #c5c5c5;
+  color: #636363;
 }
 
 .content-text-info icon-content {
@@ -163,7 +163,7 @@
 }
 
 .new-content-container-info {
-  border-bottom: 1px solid #5d5d5d;
+  border-bottom: 1px solid #b3b3b3;
 }
 
 .liked-commit a {
@@ -227,7 +227,7 @@
 }
 
 .fl-button:hover {
-  background: #2e2e2e;
+  background: #c1e0fd;
   transition: ease-in 0.1s;
 }
 
@@ -248,7 +248,7 @@
 }
 
 .client-info .share-border {
-  border-bottom: 1px solid #5d5d5d;
+  border-bottom: 1px solid #b3b3b3;
 }
 
 .client-info .share-border .share-box {
@@ -261,7 +261,7 @@
 
 .fl-button span {
   padding-left: 3px !important;
-  color: #a9a9a9;
+  color: #383838;
   font-weight: 500;
 }
 
@@ -314,9 +314,9 @@
   align-items: center;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
-  border-top: 1px solid #366c93;
-  border-left: 1px solid #366c93;
-  border-bottom: 1px solid #366c93;
+  border-top: 1px solid #b3b3b3;
+  border-left: 1px solid #b3b3b3;
+  border-bottom: 1px solid #b3b3b3;
 }
 
 .commit-inp .fl-inp input {
@@ -324,7 +324,7 @@
   border: none;
   padding: 5px 9px 7.5px 9px !important;
   height: 100%;
-  border-right: 1px solid #366c93;
+  border-right: 1px solid #b3b3b3;
   width: 88.1%;
   color: rgb(121, 121, 121);
 }
@@ -378,20 +378,20 @@
 }
 
 .send-commit {
-  border-top: 1px solid #366c93;
-  border-bottom: 1px solid #366c93;
-  border-left: 1px solid #366c93;
-  border-right: 1px solid #366c93;
+  border-top: 1px solid #b3b3b3;
+  border-bottom: 1px solid #b3b3b3;
+  border-left: 1px solid #b3b3b3;
+  border-right: 1px solid #b3b3b3;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background: #04284b;
+  background: #d8d8d8;
 }
 
 .send-commit button {
   border: none;
   background: none;
   padding: 0 11px !important;
-  color: #fff;
+  color: rgb(43, 43, 43);
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
 }

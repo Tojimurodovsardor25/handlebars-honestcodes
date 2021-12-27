@@ -7,6 +7,7 @@ router.get('/', auth, async function (req, res, next) {
     const admin = await Admin.find()
 
     res.render('admin/index', {
+        title: 'Admin bo`limi',
         layout: 'main',
         admin
     })

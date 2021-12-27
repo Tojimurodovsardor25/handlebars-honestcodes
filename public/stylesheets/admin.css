@@ -196,3 +196,40 @@
     font-weight: 600;
     border-radius: 3px;
 }
+
+.profil-info {
+    position: relative;
+}
+
+.profil-silde-menu {
+    position: absolute;
+    width: 137px;
+    left: -57px;
+    top: 47px;
+    display: none;
+}
+
+.list-li {
+    background: #223049;
+}
+
+.list-li ul li {
+    display: flex;
+    padding: 3px 7px !important;
+    transition: ease-in 0.1s;
+}
+
+.list-li ul li a {
+    width: 100%;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+    font-size: 15px;
+    padding-top: 2.9px !important;
+}
+
+.list-li ul li:hover {
+    background: #3a4c6a;
+    transition: ease-out 0.1s;
+}

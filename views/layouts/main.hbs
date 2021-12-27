@@ -4,13 +4,11 @@
 {{> head}}
 
 <body>
-
-    {{> navbar}}
-
+    {{#if isAuthen}}
+    {{> aside}}
+    {{/if}}
     {{{body}}}
-
     {{> footer}}
-
     {{> script}}
 </body>
 

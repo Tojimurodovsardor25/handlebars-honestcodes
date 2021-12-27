@@ -28,7 +28,7 @@
 }
 
 .navbar-line-top {
-  background-color: #121720;
+  background-color: #fffbf8;
   /* background-color: #003e70; */
   /* Ranglar navbar uchun */
   padding: 0;
@@ -116,7 +116,7 @@
   height: 100%;
   padding: 0 9px 0 0 !important;
   font-size: 31px;
-  color: #2c2c2c;
+  color: #195289;
   font-family: "Roboto", sans-serif;
 }
 
@@ -193,7 +193,7 @@
   padding: 11px !important;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
-  background: #ffffff;
+  background: #bcd1e5;
 }
 
 .search-input input:focus {
@@ -210,7 +210,7 @@
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
-  color: #ffffff;
+  color: #282828;
   height: 100%;
   font-family: "Roboto", sans-serif;
 }

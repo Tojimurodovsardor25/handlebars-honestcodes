@@ -10,7 +10,7 @@ router.get("/signin", (req, res) => {
     });
 });
 
-router.get("/logout", (req, res) => {
+router.get("/signout", (req, res) => {
     // req.session.isAuth = false
     req.session.destroy(() => {
         // tozalavorish
