@@ -52,12 +52,10 @@ router.get("/signup", (req, res, next) => {
 });
 
 
-
 router.post("/signup", fileUpload.single("avatar"), async (req, res) => {
     console.log(req.body, 'Ma`lumotlar shu yerda ');
     const { nickname, name, password } = req.body;
     req.file ? (avatar = req.file.filename) : (avatar = "");
-
     const hasPassword = await bcrypt.hash(password, 10);
 
     const admin = new Admin({
@@ -66,7 +64,6 @@ router.post("/signup", fileUpload.single("avatar"), async (req, res) => {
         password: hasPassword,
         avatar
     });
-
     await admin.save();
     res.redirect("/auth/signin");
 });
