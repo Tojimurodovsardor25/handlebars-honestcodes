@@ -1,6 +1,5 @@
 const mongoose = require('mongoose')
 const URI = 'mongodb+srv://tojimuradov:aHUfjDfe7UQGaKLn@hbsmongodbmongoose.7vugm.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
-
 module.exports = async () => {
     try {
         await mongoose.connect(URI)

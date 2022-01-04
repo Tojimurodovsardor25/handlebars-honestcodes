@@ -18,6 +18,7 @@ router.get("/signout", (req, res) => {
     });
 });
 
+
 router.post("/signin", async (req, res) => {
     try {
         const { nickname, password } = req.body;
@@ -45,27 +46,27 @@ router.post("/signin", async (req, res) => {
 });
 
 
-router.get("/signup", (req, res, next) => {
-    res.render("auth/signup", {
-        title: "SignUp",
-    });
-});
+// router.get("/signup", (req, res, next) => {
+//     res.render("auth/signup", {
+//         title: "SignUp",
+//     });
+// });
 
 
-router.post("/signup", fileUpload.single("avatar"), async (req, res) => {
-    console.log(req.body, 'Ma`lumotlar shu yerda ');
-    const { nickname, name, password } = req.body;
-    req.file ? (avatar = req.file.filename) : (avatar = "");
-    const hasPassword = await bcrypt.hash(password, 10);
+// router.post("/signup", fileUpload.single("avatar"), async (req, res) => {
+//     console.log(req.body, 'Ma`lumotlar shu yerda ');
+//     const { nickname, name, password } = req.body;
+//     req.file ? (avatar = req.file.filename) : (avatar = "");
+//     const hasPassword = await bcrypt.hash(password, 10);
 
-    const admin = new Admin({
-        nickname,
-        name,
-        password: hasPassword,
-        avatar
-    });
-    await admin.save();
-    res.redirect("/auth/signin");
-});
+//     const admin = new Admin({
+//         nickname,
+//         name,
+//         password: hasPassword,
+//         avatar
+//     });
+//     await admin.save();
+//     res.redirect("/auth/signin");
+// });
 
 module.exports = router;

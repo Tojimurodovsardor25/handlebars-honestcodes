@@ -1,10 +1,10 @@
 const createError = require('http-errors');
 const express = require('express');
-const { engine } = require('express-handlebars')
+const { engine } = require('express-handlebars');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
-const session = require('express-session')
+const session = require('express-session');
 const MongoStore = require('connect-mongodb-session')(session)
 
 const indexRouter = require('./routes/index');
@@ -14,6 +14,7 @@ const authRouter = require('./routes/auth');
 
 
 const variables = require('./middleware/virables');
+// const userVirables = require('./middleware/userVirables')
 
 const app = express();
 
@@ -32,7 +33,6 @@ app.engine('hbs', engine({
     allowProtoMethodsByDefault: true
   }
 }))
-
 
 
 const store = new MongoStore({
@@ -59,9 +59,10 @@ app.use('/admin', express.static(path.join(__dirname, 'public')))
 app.use('/admin:any', express.static(path.join(__dirname, 'public')))
 
 app.use(variables)
+// app.use(userVirables)
 
-app.use('/', indexRouter);
 app.use('/users', usersRouter)
+app.use('/', indexRouter);
 app.use('/admin', adminRouter)
 app.use('/auth', authRouter)
 

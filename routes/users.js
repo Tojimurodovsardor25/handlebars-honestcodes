@@ -1,9 +1,18 @@
-const express = require('express');
-const router = express.Router();
+const { Router } = require('express')
+const router = Router()
+// const User = require('../models/Users')
+// const fileUpload = require('../middleware/fileUpload.js')
+// const bcryptjs = require('bcryptjs')
 
-/* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
-});
+router.get('/signin', (req, res) => {
+  res.render('users/signin', {
+    title: 'Sign in',
+  })
+})
+router.get('/signup', (req, res) => {
+  res.render('users/signup', {
+    title: 'Sign up',
+  })
+})
 
 module.exports = router;
