@@ -2,15 +2,13 @@
     <div class="sign-box">
         <span class="title-site">Hello there!</span>
         <span class="title-site">Sign in to Honest</span>
-        <form action="/users/signup" method="POST" enctype="multipart/form-data">
+        <form action="/user/signup" method="POST">
             <label for="">User name</label>
             <input type="text" name="name" required>
             <label for="">Nickname</label>
             <input type="text" name="nickname" required>
             <label for="">User password</label>
             <input type="password" name="password" required>
-            <label for="">Avatar</label>
-            <input type="file" class="form-control" name="avatar" placeholder="Аватар" />
             <div class="btn-box">
                 <button> <a href="/">Go back</a></button>
                 <button type="submit">Sign up</button>

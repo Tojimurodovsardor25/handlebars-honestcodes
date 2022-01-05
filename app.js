@@ -15,7 +15,7 @@ const authRouter = require('./routes/auth');
 
 
 const variables = require('./middleware/virables');
-// const userVirables = require('./middleware/userVirables')
+const userVirables = require('./middleware/userVirables')
 
 const app = express();
 
@@ -60,7 +60,7 @@ app.use('/admin', express.static(path.join(__dirname, 'public')))
 app.use('/admin:any', express.static(path.join(__dirname, 'public')))
 
 app.use(variables)
-// app.use(userVirables)
+app.use(userVirables)
 
 app.use('/users', usersRouter)
 app.use('/user', userRouter)
