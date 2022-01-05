@@ -1,18 +1,13 @@
 const { Router } = require('express')
 const router = Router()
-// const User = require('../models/Users')
-// const fileUpload = require('../middleware/fileUpload.js')
-// const bcryptjs = require('bcryptjs')
+const users = require('../middleware/user')
+const Users = require('../models/Users')
 
-router.get('/signin', (req, res) => {
-  res.render('users/signin', {
-    title: 'Sign in',
-  })
-})
-router.get('/signup', (req, res) => {
-  res.render('users/signup', {
-    title: 'Sign up',
+router.get('/', users, async (req, res) => {
+  const user = await Users.find()
+  res.render('user/index', {
+    title: 'User page index'
   })
 })
 
-module.exports = router;
+module.exports = router
