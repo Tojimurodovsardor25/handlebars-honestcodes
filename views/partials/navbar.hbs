@@ -58,7 +58,8 @@
                     </div>
                 </div>
                 <div class="inter-info">
-                    {{!-- <li-icon>
+                    {{#if userAuthen}}
+                    <li-icon>
                         <i class="fad fa-bells"></i>
                     </li-icon>
                     <li-icon>
@@ -71,18 +72,32 @@
                                 <li-drop><i class="fad fa-arrow-alt-from-top"></i></li-drop>
                             </div>
                         </div>
-                    </div>
-                    <div class="profil-menu">
-                        <div class="menu-slide">
-                            <ul>
-                                <li>
-                                    <a href="#!"></a>
-                                </li>
-                            </ul>
+                        <div class="profil-menu">
+                            <div class="menu-slide">
+                                <ul>
+                                    <li>
+                                        <a href="#!"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="profil-silde-menu">
+                                <div class="list-li">
+                                    <ul>
+                                        <li>
+                                            <a href="/users">View profil</a>
+                                        </li>
+                                        <li>
+                                            <a href="/user/signout">Sign out</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-                    </div> --}}
+                    </div>
+                    {{else}}
                     <a class="btn-sign-in" href="/user/signin">Sign in</a>
                     <a class="btn-sign-up" href="/user/signup">Sign up</a>
+                    {{/if}}
                 </div>
             </div>
         </div>

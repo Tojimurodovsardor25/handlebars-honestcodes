@@ -1,0 +1,22 @@
+.user-left-min-content {
+    height: 500px;
+    margin-right: 15px !important;
+}
+
+.user-right-min-content {
+    margin-left: 15px !important;
+}
+
+.user-grid-temp-content {
+    grid-template-columns: minmax(0, 2.5fr) minmax(0, 1fr) minmax(0px, 0fr);
+    display: grid;
+    grid-area: content;
+    grid-template-rows: auto;
+    row-gap: var(--scaffold-layout-gutter);
+    max-width: 1133px;
+    padding-right: var(--bs-gutter-x, 0.75rem) !important;
+    padding-left: var(--bs-gutter-x, 0.75rem) !important;
+    padding-top: 23px !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
