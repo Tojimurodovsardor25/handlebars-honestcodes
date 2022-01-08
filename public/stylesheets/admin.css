@@ -107,6 +107,7 @@
     margin: auto !important;
     border-radius: 9px;
 }
+
 .sign-box {
     padding: 5px 9px !important;
     width: 333px;
@@ -181,17 +182,14 @@
     padding: 9px 0 !important;
 }
 
-.btn-box button:nth-child(1) {
-    padding: 4.1px 6.5px !important;
+.btn-box  a:nth-child(1) {
     font-size: 13px;
     background: none;
     border: none;
     background: #fbfbfb;
     font-weight: 600;
     border-radius: 3px;
-}
-
-.btn-box button a:nth-child(1) {
+    padding: 4.1px 6.5px !important;
     color: rgb(81 81 81);
     font-family: "Roboto", sans-serif;
 }
