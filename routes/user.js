@@ -20,6 +20,7 @@ router.post('/signin', async (req, res) => {
     try {
         const { nickname, password } = req.body
 
+
         const candidateUser = await Users.findOne({ nickname })
         console.log(candidateUser);
         if (candidateUser) {
@@ -59,5 +60,6 @@ router.post('/signup', async (req, res) => {
     await users.save()
     res.redirect('/user/signin')
 })
+
 
 module.exports = router

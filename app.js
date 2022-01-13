@@ -31,7 +31,7 @@ app.engine('hbs', engine({
 
   runtimeOptions: {
     allowProtoMethodsByDefault: true,
-    allowProtoMethodsByDefault: true
+    allowProtoMethodsByDefault: true,
   }
 }))
 
