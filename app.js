@@ -10,6 +10,7 @@ const MongoStore = require('connect-mongodb-session')(session)
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
 const userRouter = require('./routes/user');
+const userSetRouter = require('./routes/setting');
 const adminRouter = require('./routes/admin')
 const authRouter = require('./routes/auth');
 
@@ -64,6 +65,7 @@ app.use(userVirables)
 
 app.use('/users', usersRouter)
 app.use('/user', userRouter)
+app.use('/userSettings', userSetRouter)
 app.use('/', indexRouter);
 app.use('/admin', adminRouter)
 app.use('/auth', authRouter)

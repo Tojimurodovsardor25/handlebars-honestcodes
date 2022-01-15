@@ -1,0 +1,51 @@
+/*
+
+Settings profil user --->
+                          ----------->
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+
+.setting-user:nth-child(1) {
+    margin-left: 0 !important;
+    margin-right: 15px !important;
+    height: min-content;
+}
+
+.setting-user:nth-child(2) {
+    margin-right: 0 !important;
+    margin-left: 15px !important;
+}
+
+.settings-grid {
+    grid-template-columns: minmax(0, 0.4fr) minmax(0, 1fr) minmax(0px, 0fr) !important;
+}
+
+.account-settings {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    display: block;
+    padding: 7px 9px !important;
+    background: #b1aeae;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    color: #1c1c1c;
+    border-bottom: 4px solid #7c7c7c;
+}
+
+.content-settings .settings-list {
+    display: block;
+    padding: 7px 9px !important;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    color: #1c1c1c;
+}
+
+.content-settings {
+    border-bottom: 1px solid #b3b3b3;
+    transition: 0.1s ease-in;
+}
+
+.content-settings:hover {
+    background: #e7e7e7;
+    transition: 0.1s ease-out;
+}

@@ -10,6 +10,7 @@ router.get('/', user, async (req, res) => {
     layout: 'index',
     users
   })
+  console.log(users , 'foydalanuvchi malumoti');
 })
 
 module.exports = router
