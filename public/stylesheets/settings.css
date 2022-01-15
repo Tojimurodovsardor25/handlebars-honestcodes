@@ -49,3 +49,16 @@ Settings profil user --->
     background: #e7e7e7;
     transition: 0.1s ease-out;
 }
+
+.list-settings-menu {
+    display: none;
+}
+
+.list-settings-menu.active {
+    display: block;
+}
+
+.settings-list.active {
+    background: #bababa;
+    transition: 0.1s ease-out;
+}
