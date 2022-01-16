@@ -64,9 +64,9 @@ body {
   height: 1111px;
   overflow: hidden;
   overflow-y: scroll;
-  border-top: 3px solid #7f7f7f;
   border-top-left-radius: 9px;
   border-top-right-radius: 9px;
+  border-top: 1px solid #bababa;
 }
 
 .bottom-content::-webkit-scrollbar {
@@ -133,7 +133,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 5px;
-  border-bottom: 3px solid #7f7f7f;
 }
 
 .link-page {
@@ -333,7 +332,7 @@ icon-site-png {
   border-top-right-radius: 23px;
   border-top-left-radius: 23px;
   transition: 0.5s;
-  border-bottom: 3px solid #3a3a3a;
+  border-bottom: 1px solid #bababa;
 }
 
 .profil-img-user .img-one img {

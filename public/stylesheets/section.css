@@ -13,6 +13,8 @@
 
 .new-content-container {
   margin-bottom: 19px !important;
+  border-top-left-radius: 9px !important;
+  border-top-right-radius: 9px !important;
 }
 
 .content-info-name .ts-profil-img {

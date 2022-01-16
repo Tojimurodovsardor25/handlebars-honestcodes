@@ -34,7 +34,7 @@
   /* background-color: #5db7ff; */
   /* Ranglar navbar uchun */
   padding: 0;
-  border-bottom: 2.3px solid #545454;
+  border-bottom: 2.3px solid #a0a0a0;
   position: relative;
 }
 
@@ -183,7 +183,7 @@
   border: none;
   background: none;
   width: 37px;
-  background: #193b53;
+  background: #e6e6e6;
   height: 100%;
   border-bottom-right-radius: 3px;
   border-top-right-radius: 3px;
@@ -191,7 +191,7 @@
 
 .search-input-button .fa-search {
   font-size: 19px;
-  color: #ffffff;
+  color: #000;
 }
 
 .search-input input {
@@ -200,7 +200,7 @@
   padding: 11px !important;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
-  background: #bcd1e5;
+  background: #f4f4f4;
 }
 
 .search-input input:focus {
@@ -224,7 +224,7 @@
 
 .profil-img img {
   padding: 3px !important;
-  background-color: #2477bb;
+  background-color: #cccccc78;
 }
 
 .profil-info {
