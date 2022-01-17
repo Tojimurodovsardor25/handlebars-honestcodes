@@ -32,44 +32,571 @@
                                     <div class="form-group-content">
                                         <dl>
                                             <dt><label for="user_profil_name" class="user_name_label">Name</label></dt>
-                                            <dd><input type="text" name="user[profil_name]" id="user_profil_name">
+                                            <dd><input type="text" name="user[profil_name]" id="user_profil_name"
+                                                    class="inp-add-styles">
                                                 <div class="note">Your name may appear around
                                                     <strong>Honestcodes</strong> where you
-                                                    contribute or are mentioned. You can remove it at any time.</div>
+                                                    contribute or are mentioned. You can remove it at any time.
+                                                </div>
                                             </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="form-group-content">
+                                        <dl>
+                                            <dt><label for="user_profil_bio" class="user_profil_bio">Bio</label></dt>
+                                            <dd>
+                                                <textarea
+                                                    class="form-control user_profil_bio-filed length-limited-input"
+                                                    name="user[profil_bio]" id="user_profil_bio" cols="17" rows="5"
+                                                    placeholder="Tell us a little bit about yourself"></textarea>
+                                                <div class="note">
+                                                    Write here to link to other users and organizations
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="form-group-content">
+                                        <dl>
+                                            <dt><label for="user_profil_blog" class="user_profil_blog">
+                                                    <font>URL</font>
+                                                </label></dt>
+                                            <dd>
+                                                <input type="text" class="user_profil_blog inp-add-styles" value=""
+                                                    id="user_profil_blog" name="user[profil_blog]">
+                                                <div class="note">
+                                                    You can specify a URL
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="form-group-content">
+                                        <dl>
+                                            <dt><label for="user_profil_company" class="user_profil_company">
+                                                    <font>Company</font>
+                                                </label></dt>
+                                            <dd>
+                                                <input type="text" class="user_profil_company inp-add-styles" value=""
+                                                    id="user_profil_company" name="user[profil_company]">
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="form-group-content">
+                                        <dl>
+                                            <dt><label for="user_profil_location" class="user_profil_location">
+                                                    <font>Location</font>
+                                                </label></dt>
+                                            <dd>
+                                                <input type="text" class="user_profil_location inp-add-styles" value=""
+                                                    id="user_profil_location" name="user[profil_location]">
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="form-group-content">
+                                        <dl>
+                                            <p class="note">
+                                                All of the fields on this page are optional and can be deleted at any
+                                                time, and
+                                                by filling them out, you're giving us consent to share this data
+                                                wherever your
+                                                user profile appears
+                                            </p>
+                                            <div class="note">
+                                                <button class="btn-form-submit">Update profile</button>
+                                            </div>
                                         </dl>
                                     </div>
                                 </form>
                             </div>
                             <div class="grid-gutter-right">
-                                <form action="">
-                                    <div class="form-group-content">
-                                        <dl>
-                                            <dt><label class="form-min-labal">Profile picture</label></dt>
-                                            <dd class="avatar-upload-container"><input type="file"
-                                                    name="user[profil_name]" id="avatar_upload"
-                                                    class="manual-file-chooser" hidden>
-                                            </dd>
-                                        </dl>
-                                    </div>
-                                </form>
-                                <div class="avatar-upload">
-                                    <details class="dropdown details-reset details-overlay">
-                                        <summary aria-haspopup="menu" role="button">
-                                            <img src="/images/1639314204182.jfif" alt="" width="150" height="150">
-                                            <div class="avatar-edit-btn">
-                                                <span>Edit</span>
+                                <div class="gutter-content-length">
+                                    <dl>
+                                        <form action="">
+                                            <div class="form-group-content">
+                                                <dl>
+                                                    <dt><label class="form-min-labal">Profile picture</label></dt>
+                                                    <dd class="avatar-upload-container"><input type="file"
+                                                            name="user[profil_name]" id="avatar_upload"
+                                                            class="manual-file-chooser" hidden>
+                                                    </dd>
+                                                </dl>
                                             </div>
-                                        </summary>
-                                    </details>
+                                        </form>
+                                        <div class="avatar-upload">
+                                            <details class="dropdown details-reset details-overlay">
+                                                <summary aria-haspopup="menu" role="button">
+                                                    <img src="/images/1639314204182.jfif" alt="" width="150"
+                                                        height="150">
+                                                    <div class="avatar-edit-btn">
+                                                        <span>Edit</span>
+                                                    </div>
+                                                </summary>
+                                            </details>
+                                        </div>
+                                    </dl>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="list-settings-menu" id="set_id_2">Hello!Settings 2</div>
-                    <div class="list-settings-menu" id="set_id_3">Hello!Settings 3</div>
-                    <div class="list-settings-menu" id="set_id_4">Hello!Settings 4</div>
-                    <div class="list-settings-menu" id="set_id_5">Hello!Settings 5</div>
+                    <div class="list-settings-menu" id="set_id_2">
+                        <div class="subhead">
+                            <h2>Public profile 2</h2>
+                        </div>
+                        <div class="clearfix gutter">
+                            <div class="grid-gutter-left">
+                                <form action="">
+                                    <div class="form-group-content">
+                                        <dl>
+                                            <dt><label for="user_profil_name" class="user_name_label">Name</label></dt>
+                                            <dd><input type="text" name="user[profil_name]" id="user_profil_name"
+                                                    class="inp-add-styles">
+                                                <div class="note">Your name may appear around
+                                                    <strong>Honestcodes</strong> where you
+                                                    contribute or are mentioned. You can remove it at any time.
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="form-group-content">
+                                        <dl>
+                                            <dt><label for="user_profil_bio" class="user_profil_bio">Bio</label></dt>
+                                            <dd>
+                                                <textarea
+                                                    class="form-control user_profil_bio-filed length-limited-input"
+                                                    name="user[profil_bio]" id="user_profil_bio" cols="17" rows="5"
+                                                    placeholder="Tell us a little bit about yourself"></textarea>
+                                                <div class="note">
+                                                    Write here to link to other users and organizations
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="form-group-content">
+                                        <dl>
+                                            <dt><label for="user_profil_blog" class="user_profil_blog">
+                                                    <font>URL</font>
+                                                </label></dt>
+                                            <dd>
+                                                <input type="text" class="user_profil_blog inp-add-styles" value=""
+                                                    id="user_profil_blog" name="user[profil_blog]">
+                                                <div class="note">
+                                                    You can specify a URL
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="form-group-content">
+                                        <dl>
+                                            <dt><label for="user_profil_company" class="user_profil_company">
+                                                    <font>Company</font>
+                                                </label></dt>
+                                            <dd>
+                                                <input type="text" class="user_profil_company inp-add-styles" value=""
+                                                    id="user_profil_company" name="user[profil_company]">
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="form-group-content">
+                                        <dl>
+                                            <dt><label for="user_profil_location" class="user_profil_location">
+                                                    <font>Location</font>
+                                                </label></dt>
+                                            <dd>
+                                                <input type="text" class="user_profil_location inp-add-styles" value=""
+                                                    id="user_profil_location" name="user[profil_location]">
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="form-group-content">
+                                        <dl>
+                                            <p class="note">
+                                                All of the fields on this page are optional and can be deleted at any
+                                                time, and
+                                                by filling them out, you're giving us consent to share this data
+                                                wherever your
+                                                user profile appears
+                                            </p>
+                                            <div class="note">
+                                                <button class="btn-form-submit">Update profile</button>
+                                            </div>
+                                        </dl>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="grid-gutter-right">
+                                <div class="gutter-content-length">
+                                    <dl>
+                                        <form action="">
+                                            <div class="form-group-content">
+                                                <dl>
+                                                    <dt><label class="form-min-labal">Profile picture</label></dt>
+                                                    <dd class="avatar-upload-container"><input type="file"
+                                                            name="user[profil_name]" id="avatar_upload"
+                                                            class="manual-file-chooser" hidden>
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                        </form>
+                                        <div class="avatar-upload">
+                                            <details class="dropdown details-reset details-overlay">
+                                                <summary aria-haspopup="menu" role="button">
+                                                    <img src="/images/1639314204182.jfif" alt="" width="150"
+                                                        height="150">
+                                                    <div class="avatar-edit-btn">
+                                                        <span>Edit</span>
+                                                    </div>
+                                                </summary>
+                                            </details>
+                                        </div>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-settings-menu" id="set_id_3">
+                        <div class="subhead">
+                            <h2>Public profile 3</h2>
+                        </div>
+                        <div class="clearfix gutter">
+                            <div class="grid-gutter-left">
+                                <form action="">
+                                    <div class="form-group-content">
+                                        <dl>
+                                            <dt><label for="user_profil_name" class="user_name_label">Name</label></dt>
+                                            <dd><input type="text" name="user[profil_name]" id="user_profil_name"
+                                                    class="inp-add-styles">
+                                                <div class="note">Your name may appear around
+                                                    <strong>Honestcodes</strong> where you
+                                                    contribute or are mentioned. You can remove it at any time.
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="form-group-content">
+                                        <dl>
+                                            <dt><label for="user_profil_bio" class="user_profil_bio">Bio</label></dt>
+                                            <dd>
+                                                <textarea
+                                                    class="form-control user_profil_bio-filed length-limited-input"
+                                                    name="user[profil_bio]" id="user_profil_bio" cols="17" rows="5"
+                                                    placeholder="Tell us a little bit about yourself"></textarea>
+                                                <div class="note">
+                                                    Write here to link to other users and organizations
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="form-group-content">
+                                        <dl>
+                                            <dt><label for="user_profil_blog" class="user_profil_blog">
+                                                    <font>URL</font>
+                                                </label></dt>
+                                            <dd>
+                                                <input type="text" class="user_profil_blog inp-add-styles" value=""
+                                                    id="user_profil_blog" name="user[profil_blog]">
+                                                <div class="note">
+                                                    You can specify a URL
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="form-group-content">
+                                        <dl>
+                                            <dt><label for="user_profil_company" class="user_profil_company">
+                                                    <font>Company</font>
+                                                </label></dt>
+                                            <dd>
+                                                <input type="text" class="user_profil_company inp-add-styles" value=""
+                                                    id="user_profil_company" name="user[profil_company]">
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="form-group-content">
+                                        <dl>
+                                            <dt><label for="user_profil_location" class="user_profil_location">
+                                                    <font>Location</font>
+                                                </label></dt>
+                                            <dd>
+                                                <input type="text" class="user_profil_location inp-add-styles" value=""
+                                                    id="user_profil_location" name="user[profil_location]">
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="form-group-content">
+                                        <dl>
+                                            <p class="note">
+                                                All of the fields on this page are optional and can be deleted at any
+                                                time, and
+                                                by filling them out, you're giving us consent to share this data
+                                                wherever your
+                                                user profile appears
+                                            </p>
+                                            <div class="note">
+                                                <button class="btn-form-submit">Update profile</button>
+                                            </div>
+                                        </dl>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="grid-gutter-right">
+                                <div class="gutter-content-length">
+                                    <dl>
+                                        <form action="">
+                                            <div class="form-group-content">
+                                                <dl>
+                                                    <dt><label class="form-min-labal">Profile picture</label></dt>
+                                                    <dd class="avatar-upload-container"><input type="file"
+                                                            name="user[profil_name]" id="avatar_upload"
+                                                            class="manual-file-chooser" hidden>
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                        </form>
+                                        <div class="avatar-upload">
+                                            <details class="dropdown details-reset details-overlay">
+                                                <summary aria-haspopup="menu" role="button">
+                                                    <img src="/images/1639314204182.jfif" alt="" width="150"
+                                                        height="150">
+                                                    <div class="avatar-edit-btn">
+                                                        <span>Edit</span>
+                                                    </div>
+                                                </summary>
+                                            </details>
+                                        </div>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-settings-menu" id="set_id_4">
+                        <div class="subhead">
+                            <h2>Public profile 4</h2>
+                        </div>
+                        <div class="clearfix gutter">
+                            <div class="grid-gutter-left">
+                                <form action="">
+                                    <div class="form-group-content">
+                                        <dl>
+                                            <dt><label for="user_profil_name" class="user_name_label">Name</label></dt>
+                                            <dd><input type="text" name="user[profil_name]" id="user_profil_name"
+                                                    class="inp-add-styles">
+                                                <div class="note">Your name may appear around
+                                                    <strong>Honestcodes</strong> where you
+                                                    contribute or are mentioned. You can remove it at any time.
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="form-group-content">
+                                        <dl>
+                                            <dt><label for="user_profil_bio" class="user_profil_bio">Bio</label></dt>
+                                            <dd>
+                                                <textarea
+                                                    class="form-control user_profil_bio-filed length-limited-input"
+                                                    name="user[profil_bio]" id="user_profil_bio" cols="17" rows="5"
+                                                    placeholder="Tell us a little bit about yourself"></textarea>
+                                                <div class="note">
+                                                    Write here to link to other users and organizations
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="form-group-content">
+                                        <dl>
+                                            <dt><label for="user_profil_blog" class="user_profil_blog">
+                                                    <font>URL</font>
+                                                </label></dt>
+                                            <dd>
+                                                <input type="text" class="user_profil_blog inp-add-styles" value=""
+                                                    id="user_profil_blog" name="user[profil_blog]">
+                                                <div class="note">
+                                                    You can specify a URL
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="form-group-content">
+                                        <dl>
+                                            <dt><label for="user_profil_company" class="user_profil_company">
+                                                    <font>Company</font>
+                                                </label></dt>
+                                            <dd>
+                                                <input type="text" class="user_profil_company inp-add-styles" value=""
+                                                    id="user_profil_company" name="user[profil_company]">
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="form-group-content">
+                                        <dl>
+                                            <dt><label for="user_profil_location" class="user_profil_location">
+                                                    <font>Location</font>
+                                                </label></dt>
+                                            <dd>
+                                                <input type="text" class="user_profil_location inp-add-styles" value=""
+                                                    id="user_profil_location" name="user[profil_location]">
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="form-group-content">
+                                        <dl>
+                                            <p class="note">
+                                                All of the fields on this page are optional and can be deleted at any
+                                                time, and
+                                                by filling them out, you're giving us consent to share this data
+                                                wherever your
+                                                user profile appears
+                                            </p>
+                                            <div class="note">
+                                                <button class="btn-form-submit">Update profile</button>
+                                            </div>
+                                        </dl>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="grid-gutter-right">
+                                <div class="gutter-content-length">
+                                    <dl>
+                                        <form action="">
+                                            <div class="form-group-content">
+                                                <dl>
+                                                    <dt><label class="form-min-labal">Profile picture</label></dt>
+                                                    <dd class="avatar-upload-container"><input type="file"
+                                                            name="user[profil_name]" id="avatar_upload"
+                                                            class="manual-file-chooser" hidden>
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                        </form>
+                                        <div class="avatar-upload">
+                                            <details class="dropdown details-reset details-overlay">
+                                                <summary aria-haspopup="menu" role="button">
+                                                    <img src="/images/1639314204182.jfif" alt="" width="150"
+                                                        height="150">
+                                                    <div class="avatar-edit-btn">
+                                                        <span>Edit</span>
+                                                    </div>
+                                                </summary>
+                                            </details>
+                                        </div>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-settings-menu" id="set_id_5">
+                        <div class="subhead">
+                            <h2>Public profile 5</h2>
+                        </div>
+                        <div class="clearfix gutter">
+                            <div class="grid-gutter-left">
+                                <form action="">
+                                    <div class="form-group-content">
+                                        <dl>
+                                            <dt><label for="user_profil_name" class="user_name_label">Name</label></dt>
+                                            <dd><input type="text" name="user[profil_name]" id="user_profil_name"
+                                                    class="inp-add-styles">
+                                                <div class="note">Your name may appear around
+                                                    <strong>Honestcodes</strong> where you
+                                                    contribute or are mentioned. You can remove it at any time.
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="form-group-content">
+                                        <dl>
+                                            <dt><label for="user_profil_bio" class="user_profil_bio">Bio</label></dt>
+                                            <dd>
+                                                <textarea
+                                                    class="form-control user_profil_bio-filed length-limited-input"
+                                                    name="user[profil_bio]" id="user_profil_bio" cols="17" rows="5"
+                                                    placeholder="Tell us a little bit about yourself"></textarea>
+                                                <div class="note">
+                                                    Write here to link to other users and organizations
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="form-group-content">
+                                        <dl>
+                                            <dt><label for="user_profil_blog" class="user_profil_blog">
+                                                    <font>URL</font>
+                                                </label></dt>
+                                            <dd>
+                                                <input type="text" class="user_profil_blog inp-add-styles" value=""
+                                                    id="user_profil_blog" name="user[profil_blog]">
+                                                <div class="note">
+                                                    You can specify a URL
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="form-group-content">
+                                        <dl>
+                                            <dt><label for="user_profil_company" class="user_profil_company">
+                                                    <font>Company</font>
+                                                </label></dt>
+                                            <dd>
+                                                <input type="text" class="user_profil_company inp-add-styles" value=""
+                                                    id="user_profil_company" name="user[profil_company]">
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="form-group-content">
+                                        <dl>
+                                            <dt><label for="user_profil_location" class="user_profil_location">
+                                                    <font>Location</font>
+                                                </label></dt>
+                                            <dd>
+                                                <input type="text" class="user_profil_location inp-add-styles" value=""
+                                                    id="user_profil_location" name="user[profil_location]">
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="form-group-content">
+                                        <dl>
+                                            <p class="note">
+                                                All of the fields on this page are optional and can be deleted at any
+                                                time, and
+                                                by filling them out, you're giving us consent to share this data
+                                                wherever your
+                                                user profile appears
+                                            </p>
+                                            <div class="note">
+                                                <button class="btn-form-submit">Update profile</button>
+                                            </div>
+                                        </dl>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="grid-gutter-right">
+                                <div class="gutter-content-length">
+                                    <dl>
+                                        <form action="">
+                                            <div class="form-group-content">
+                                                <dl>
+                                                    <dt><label class="form-min-labal">Profile picture</label></dt>
+                                                    <dd class="avatar-upload-container"><input type="file"
+                                                            name="user[profil_name]" id="avatar_upload"
+                                                            class="manual-file-chooser" hidden>
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                        </form>
+                                        <div class="avatar-upload">
+                                            <details class="dropdown details-reset details-overlay">
+                                                <summary aria-haspopup="menu" role="button">
+                                                    <img src="/images/1639314204182.jfif" alt="" width="150"
+                                                        height="150">
+                                                    <div class="avatar-edit-btn">
+                                                        <span>Edit</span>
+                                                    </div>
+                                                </summary>
+                                            </details>
+                                        </div>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
