@@ -8,6 +8,7 @@ const session = require('express-session');
 const MongoStore = require('connect-mongodb-session')(session)
 
 const indexRouter = require('./routes/index');
+
 const usersRouter = require('./routes/users');
 const userRouter = require('./routes/user');
 const userSetRouter = require('./routes/setting');
@@ -59,6 +60,8 @@ app.use(session({
 
 app.use('/admin', express.static(path.join(__dirname, 'public')))
 app.use('/admin:any', express.static(path.join(__dirname, 'public')))
+// app.use('/users', express.static(path.join(__dirname, 'public')))
+// app.use('/users:any', express.static(path.join(__dirname, 'public')))
 
 app.use(variables)
 app.use(userVirables)
