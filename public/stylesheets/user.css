@@ -58,9 +58,9 @@ icon-content {
 }
 
 .context-prf-user .user-name-prf {
-  color: #3c3c3c;
-  margin-bottom: 7px !important;
+  color: #454545;
   display: inline-block;
+  font-family: "Roboto", sans-serif;
 }
 
 .context-prf-user .user-direction-prf {
@@ -121,4 +121,19 @@ icon-content {
 
 .title-prf-info hr {
   margin: 9px 0 !important;
+}
+
+.user-direction-nick {
+  font-size: 13px;
+  margin-left: 1px !important;
+  font-family: "Roboto", sans-serif;
+}
+
+.user-info-st {
+  margin-bottom: 7px !important;
+  line-height: 17px;
+}
+
+.location-info-user {
+  font-family: "Roboto", sans-serif;
 }

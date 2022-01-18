@@ -8,9 +8,9 @@ router.get('/', user, async (req, res) => {
   res.render('users/index', {
     title: 'User page index',
     layout: 'index',
-    users
+    users,
   })
-  console.log(users , 'foydalanuvchi malumoti');
+  console.log(users, 'foydalanuvchi malumoti');
 })
 
 module.exports = router
