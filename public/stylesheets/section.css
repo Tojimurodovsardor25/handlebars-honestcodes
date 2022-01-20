@@ -247,6 +247,7 @@
 .share {
   display: flex;
   align-items: center;
+  flex-direction: row;
 }
 
 .client-info .share-border {

@@ -124,6 +124,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+.logo-title strong {
+  font-weight: 500;
+}
+
 .input-box-fk {
   display: flex;
   align-items: center;
