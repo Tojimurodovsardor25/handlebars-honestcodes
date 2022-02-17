@@ -22,7 +22,6 @@ router.post('/signin', async (req, res) => {
 
 
         const candidateUser = await Users.findOne({ nickname })
-        console.log(candidateUser);
         if (candidateUser) {
             const areSame = await bcrypt.compare(password, candidateUser.password) //true || false
             if (areSame) {
@@ -48,7 +47,6 @@ router.get('/signup', (req, res) => {
 
 router.post('/signup', async (req, res) => {
     const { nickname, name, password } = req.body
-    console.log(req.body, 'sign up malumotlari');
     const userHasPassword = await bcrypt.hash(password, 10)
 
     const users = new Users({

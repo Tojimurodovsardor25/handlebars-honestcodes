@@ -5,7 +5,6 @@
             <div class="content-box user-grid-temp-content">
                 <div class="user-left-min-content bac-color">
                     <div class="user-left-min-profil">
-                        {{#each users}}
                         <div class="profil-home-page">
                             <div class="user-img-prf-box">
                                 <div class="user-img-prf">
@@ -15,14 +14,13 @@
                             </div>
                             <div class="context-prf-user">
                                 <div class="user-info-st">
-                                    <h2 class="user-name-prf">{{name}}</h2>
-                                    <p class="user-direction-nick">{{nickname}}</p>
+                                    <h2 class="user-name-prf">{{userOB.name}}</h2>
+                                    <p class="user-direction-nick">{{userOB.nickname}}</p>
                                 </div>
                                 {{!-- <p class="user-direction-prf">Pega developer</p> --}}
                                 <div><span class="location-info-user">Uzbekistan,Tashkent</span></div>
                             </div>
                         </div>
-                        {{/each}}
                         <div class="user-title-box">
                             <icon-content class="icon-user-prf">
                                 <img src="/React-icon/save-2058061-1748011.png">

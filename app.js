@@ -54,8 +54,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(session({
   resave: false,
   secret: 'some_secret_key',
-  saveUninitialized: false,
-  store
+  saveUninitialized: true,
+  store,
+  resave: false
 }))
 
 app.use('/admin', express.static(path.join(__dirname, 'public')))
