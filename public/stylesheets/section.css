@@ -223,7 +223,7 @@
 .fl-button {
   border: none;
   background: none;
-  padding: 5px 17px 5px 13px !important;
+  padding: 5px 10px 5px 13px !important;
   border-radius: 5px;
   transition: ease-in 0.3s;
 }
@@ -258,14 +258,12 @@
   margin: 3px 5px !important;
 }
 
-.fl-click {
-  padding: 5px 5px !important;
-}
-
 .fl-button span {
   padding-left: 3px !important;
   color: #383838;
   font-weight: 500;
+  font-size: 13px;
+  white-space: nowrap;
 }
 
 .dislike fl-icon {
