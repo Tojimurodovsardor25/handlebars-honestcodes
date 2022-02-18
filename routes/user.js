@@ -1,4 +1,6 @@
-const { Router } = require("express");
+const {
+  Router
+} = require("express");
 const router = Router();
 const Users = require("../models/Users");
 const bcrypt = require("bcryptjs");
@@ -18,9 +20,14 @@ router.get("/signout", (req, res) => {
 
 router.post("/signin", async (req, res) => {
   try {
-    const { nickname, password } = req.body;
+    const {
+      nickname,
+      password
+    } = req.body;
 
-    const candidateUser = await Users.findOne({ nickname });
+    const candidateUser = await Users.findOne({
+      nickname
+    });
     if (candidateUser) {
       const areSame = await bcrypt.compare(password, candidateUser.password); //true || false
       if (areSame) {
@@ -45,7 +52,11 @@ router.get("/signup", (req, res) => {
 });
 
 router.post("/signup", async (req, res) => {
-  const { nickname, name, password } = req.body;
+  const {
+    nickname,
+    name,
+    password
+  } = req.body;
   const userHasPassword = await bcrypt.hash(password, 10);
 
   const users = new Users({
